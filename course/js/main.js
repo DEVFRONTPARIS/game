@@ -291,7 +291,7 @@
                         // }
                         // console.log('bottom');                    
                     break;
-                    case Keys.space: 
+                    case Keys.space:
                         var that = this;
                         if(this.sauter){
                             this.sauter = false;
@@ -400,9 +400,11 @@
         // Event                     
         document.addEventListener('keydown', function(evt){
             player.go(evt);        
+            evt.preventDefault();            
         });  
         document.addEventListener('keyup', function(evt){
             player.stop(evt);
+            evt.preventDefault();            
         });                  
         /*
             ATTENTION : 
