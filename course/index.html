@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	<title>Document</title>
+	<!-- <link rel="icon" type="img/png" href="img/ico.png"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">	
+	<link rel="stylesheet" type="text/css" href="css/animate.css">		
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main>
+		<div class="guide">
+			<ul>
+				<li><a href="#" id="command"> <i class="fa fa-chevron-up" aria-hidden="true"></i> </a></li>
+			</ul>
+		</div>
+		<div class="score">
+			<ul>
+				<li>
+					<a href="#">
+						Fayçal TOURE - Jeu CV
+					</a>
+					<span>
+						Développeur Full-Stack Javascript
+						<a href="http://developpeur-paris.com/test-mobile/5/cv/cv.pdf" class="d_cv"><i class="fa fa-download" aria-hidden="true"></i> Télécharger CV</a>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<canvas id="myCanvas" width="800" height="480"></canvas>
+			<div class="perdu" id="perdu">	
+				<div class="msg">
+					Vous avez perdu !
+				</div>
+				<div class="rp">
+					<a href="#" id="replay">Replay</a>
+				</div>
+			</div>
+			<div class="gagner" id="gagner">	
+				<div class="msg">
+					<img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_08.png"> Vous avez gagné !
+				</div>
+				<div class="rp">
+					<a href="#" id="replay">Replay</a>
+				</div>
+			</div>
+			<div class="message" id="menu">
+				<div class="menu">
+					<a href="#" id="close_modal">
+							<i class="fa fa-times fermer" aria-hidden="true"></i>
+					</a>		
+					<ul id="menu_list">
+						<li>
+							<a href="#" id="courir"><img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_01.png" alt="">
+								<span class="texte">
+										Courir
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#"><img src="../assets/course/sprites/flag.png" alt="#">
+								<span class="texte">
+									Scores
+								</span>
+							</a>
+						</li> 
+					</ul>
+					<div class="choix" id="choix">
+						<div>
+							<h2>Choisissez un coureur</h2>
+							<hr>
+							<ul id="liste">
+								<li>
+									<a href="#" id="1">
+										<span class="texte">
+												Nelson
+										</span>										
+										<img src="../assets/course/sprites/player_01.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#" id="2">
+										<span class="texte">
+												Jack's
+										</span>											
+										<img src="../assets/course/sprites/player_02.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#" id="3">
+										<span class="texte">
+												Adel
+										</span>											
+										<img src="../assets/course/sprites/player_03.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#" id="4">
+										<span class="texte">
+												Brian
+										</span>											
+										<img src="../assets/course/sprites/player_04.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#" id="5">
+										<span class="texte">
+												Calvin
+										</span>											
+										<img src="../assets/course/sprites/player_05.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="scores" id="scores">
+
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="container">
+			<div class="cv">
+				<ul id="cv_competences">
+					<li>
+						<figure>
+							<h2>
+								Jouez pour débloquer mes compétences !
+							</h2>
+							<!-- <figcaption>
+								<p> <img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_06.png" alt=""> 2016 - URBAN CASH SARL </p>	
+							</figcaption>	 -->
+						</figure>	
+					</li>
+					<li>
+						<figure>
+							<h2>
+								Responsable Commercial
+							</h2>
+							<figcaption>
+								<p> <img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_06.png" alt=""> 2012 / 2015 - URBAN CASH SARL </p>	
+							</figcaption>	
+						</figure>	
+					</li>
+					<li>
+						<figure>
+							<h2>
+								Expert en ultrabook
+							</h2>
+							<figcaption>
+								<p> <img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_06.png" alt=""> 2012 - Intel </p>	
+							</figcaption>	
+						</figure>	
+					</li>
+					<li>
+						<figure>
+							<h2>
+								Chef de projet Multimédia 
+							</h2>
+							<figcaption>
+								<p> <img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_08.png" alt=""> 2016 - IESA Multimédia Paris </p>	
+							</figcaption>	
+						</figure>	
+					</li>
+					<li>
+						<figure>
+							<h2>
+								Développeur Full-Stack Js
+							</h2>
+							<figcaption>
+								<p> <img src="../assets/course/sprites/ico/182980-olympic-games-color-flat_06.png" alt=""> 2017 - Ifocop Paris 11 </p>	
+							</figcaption>	
+						</figure>	
+					</li>
+				</ul>
+				<ul id="pagination">
+				</ul>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="js/main.js"></script>	
+</body>
+</html>
+
