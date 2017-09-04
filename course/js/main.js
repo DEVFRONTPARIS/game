@@ -499,14 +499,13 @@
             player.positionRegistered.y = null;
             // Réinitialisation Haie et personnage
             haie.position.x = 800;
-            player.origin.x = 0;
             // Réinitialisation TestDecollision 
             action = true;
             // console.log('fin !');
         }
         // Gestion personnage 
         if(player.origin.x > myCanvas.canvas.width){
-            player.origin.x = 0;             
+            player.origin.x = -150;             
         }
     };
 
@@ -586,6 +585,7 @@
                 }
                 setTimeout(function(){
                      menu.style.display = 'none';
+                    //  btn.parentNode.parentNode.parentNode.style.display= 'block';                                 
                 },1000/60);
             }
         }); 
@@ -709,6 +709,11 @@
     // Rejouer 
     var replay = document.getElementById('replay');
         replay.addEventListener('click', function(){
+            location.reload();
+        });
+    // Rejouer 
+    var replayW = document.getElementById('replayW');
+        replayW.addEventListener('click', function(){
             location.reload();
         });
 
