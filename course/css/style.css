@@ -93,6 +93,45 @@ h2{
 	width: 800px;
 	overflow: hidden;
 }
+.container1{
+	position: relative;
+	margin: 50px auto;
+	width: 800px;
+	overflow: hidden;
+}
+.container2{
+	position: relative;
+	margin: 50px auto;
+	width: 800px;
+	overflow: hidden;
+}
+.container2 ul{
+	padding: 10px 0;
+	text-align: center;
+}
+.container2 ul li{
+	display: inline-block;
+}
+.container2 ul li a {
+	display: inline-block;
+	color: #424242;
+	transform: scale(1) rotateZ(-12deg);	
+	transition: all 0.25s;
+}
+.container2 ul li a:hover{
+	transform: scale(2) rotateZ(0);
+}
+.container2 .follow{	
+	border-top: solid 1px #f1f1f1;
+	padding-top: 10px;
+}
+.container2 .follow h2{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto';
+	font-size: 14px;
+	text-align: center;	
+}
 canvas{
 	background-color: rgba(250, 250, 250, 1);
 	 box-shadow : -1px 4px 5px #f1f1f1;	 
@@ -332,8 +371,8 @@ a.d_cv{
     top: -20%;
     margin: 25% auto;
     padding: 20px;
-    color: rgba(0, 255, 100, 0.69);
-    border: 1px solid rgba(0, 255, 100, 0.69);
+    color: #43A047;
+    border: 1px solid #43A047;
     animation: zoom_out 0.5s;
 }
 
@@ -343,4 +382,12 @@ a.d_cv{
 
 .gagner .rp a{
 	color: #ccc;
+}
+
+#cv_competences figure h2 span{
+	text-transform: lowercase;
+	display: block;
+	margin-top: 6px;
+	font-size: 14px;
+	color: #333;
 }
